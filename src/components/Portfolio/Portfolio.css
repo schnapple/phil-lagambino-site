@@ -1,0 +1,8 @@
+.Portfolio-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(223, 219, 219, 0.199);
+  padding-bottom: 5vw;
+}

@@ -1,0 +1,68 @@
+.NavBar-container {
+  width: 100%;
+  padding-top: 0.5vw;
+  padding-bottom: 0.5vw;
+  background-color: var(--backgroundTwo);
+  display: flex;
+  position: fixed;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 2;
+}
+
+.NavBar-items-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  padding-left: 1vw;
+  padding-right: 1vw;
+}
+
+.NavBar-item-phil {
+  color: white;
+  font-size: medium;
+  /* padding-left: 0.5vw; */
+  font-weight: bolder;
+  font-family: "Poppins", sans-serif;
+}
+
+.NavBar-item-resume {
+  color: var(--secondary);
+  font-size: medium;
+  font-weight: bolder;
+  padding-right: 0.5vw;
+  font-family: "Poppins", sans-serif;
+  transition: 0.5s;
+  display: none;
+}
+
+.NavBar-item-resume:hover {
+  cursor: pointer;
+  font-size: large;
+}
+
+@media (min-width: 600px) {
+  .NavBar-items-container {
+    flex-direction: row;
+    justify-content: flex-start;
+    width: none;
+  }
+
+  .NavBar-item-resume {
+    display: inline;
+    font-size: large;
+    padding-right: 1vw;
+  }
+
+  .NavBar-item-phil {
+    font-size: large;
+    padding-left: 1vw;
+  }
+
+  .NavBar-item-resume:hover {
+    cursor: pointer;
+    font-size: x-large;
+  }
+}

@@ -1,0 +1,63 @@
+.Carousel-container {
+  display: flex;
+  flex-direction: row;
+  z-index: 1;
+  margin-bottom: 2vw;
+  margin-top: 4vw;
+}
+
+.Carousel {
+  display: flex;
+  flex-direction: row;
+}
+
+.Carousel-button-next {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 4vw;
+  height: 4vw;
+  border-radius: 2vw;
+  border-style: none;
+  border: none;
+  box-shadow: none;
+  position: absolute;
+  top: 50%;
+  transition: 1s;
+  right: 0;
+  transform: translateY(-50%);
+  background-color: rgba(223, 219, 219, 0.199);
+  outline: none;
+}
+
+.Carousel-button-back {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 4vw;
+  height: 4vw;
+  border-style: none;
+  border-radius: 2vw;
+  border: none;
+  box-shadow: none;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(223, 219, 219, 0.199);
+  transition: 1s;
+  left: 0;
+  outline: none;
+}
+
+.Carousel-div {
+  position: relative;
+  width: 90vw;
+}
+
+.Carousel-button-back:hover {
+  background-color: rgba(223, 219, 219, 0.79);
+}
+
+.Carousel-button-next:hover {
+  background-color: rgba(223, 219, 219, 0.79);
+}

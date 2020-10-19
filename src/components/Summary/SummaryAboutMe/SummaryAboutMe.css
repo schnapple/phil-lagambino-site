@@ -1,0 +1,49 @@
+.Summary-about-me {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.Summary-about-me-image {
+  width: 60vw;
+  height: 60vw;
+  border-radius: 30vw;
+  overflow: hidden;
+  object-fit: cover;
+  margin-bottom: 10vw;
+}
+
+.Summary-about-me-header {
+  font-size: xx-large;
+  width: 80%;
+  font-family: "Muli", sans-serif;
+  font-weight: bold;
+}
+
+.Summary-about-me-break {
+  text-align: right;
+  font-size: 1vw;
+  width: 25vw;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 2vw;
+}
+
+@media (min-width: 600px) {
+  .Summary-about-me-image {
+    width: 20vw;
+    height: 20vw;
+    margin-bottom: 0vw;
+  }
+
+  .Summary-about-me {
+    width: 40%;
+    justify-content: flex-start;
+    align-items: flex-end;
+  }
+
+  .Summary-about-me-header {
+    text-align: end;
+  }
+}

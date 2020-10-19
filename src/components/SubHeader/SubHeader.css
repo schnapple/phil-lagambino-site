@@ -1,0 +1,15 @@
+.Sub-header-container {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Sub-header-title {
+  display: flex;
+  font-size: xxx-large;
+  border-bottom: black;
+  border-bottom-style: solid;
+  font-family: "Poppins", sans-serif;
+  font-weight: bolder;
+}

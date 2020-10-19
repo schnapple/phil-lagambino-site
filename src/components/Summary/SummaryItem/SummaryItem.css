@@ -1,0 +1,23 @@
+.Summary-items-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  margin-bottom: 5vw;
+}
+
+.Summary-item-header {
+  font-size: x-large;
+  font-family: "Muli", sans-serif;
+  font-weight: bold;
+}
+
+.Summary-item-summary {
+  font-family: "Poppins", sans-serif;
+}
+
+@media (min-width: 600px) {
+  .Summary-items-container {
+    width: 80%;
+  }
+}

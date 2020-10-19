@@ -1,0 +1,24 @@
+.NavBarItem {
+  color: var(--secondary);
+  font-size: medium;
+  padding-left: 0.5vw;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.NavBarItem:hover {
+  font-size: large;
+}
+
+@media (min-width: 600px) {
+  .NavBarItem {
+    font-size: large;
+    padding-left: 1vw;
+  }
+
+  .NavBarItem:hover {
+    font-size: x-large;
+  }
+}

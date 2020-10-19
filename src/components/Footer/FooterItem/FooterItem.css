@@ -1,0 +1,10 @@
+.Footer-item-container {
+  margin-right: 1vw;
+  transition: 0.5s;
+  color: white;
+}
+
+.Footer-item-container:hover {
+  color: var(--secondary);
+  cursor: pointer;
+}
