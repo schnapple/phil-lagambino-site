@@ -1,11 +1,14 @@
 import React, { useState, useEffect } from "react";
 import { Route, Switch } from "react-router-dom";
 import { useDispatch } from "react-redux";
+import { ThemeProvider } from '@material-ui/core/styles';
 import "./App.css";
 import Home from "./containers/Home/Home";
+import ImageCyclingDemo from "./containers/ImageCyclingDemo/ImageCyclingDemo";
 import AOS from "aos";
 import * as fetchData from "./store/actions/fetchData";
 import * as auth from "./store/actions/auth";
+import theme from './theme';
 import "aos/dist/aos.css";
 
 const App = () => {
@@ -32,11 +35,14 @@ const App = () => {
     return <div></div>;
   }
   return (
-    <div className="App">
-      <Switch>
-        <Route path="/" exact component={Home} />
-      </Switch>
-    </div>
+    <ThemeProvider theme={theme}>
+      <div className="App">
+        <Switch>
+          <Route path="/" exact component={Home} />
+          <Route path="/imageDemo" exact component={ImageCyclingDemo} />
+        </Switch>
+      </div>
+    </ThemeProvider>
   );
 };
 

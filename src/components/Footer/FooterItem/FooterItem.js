@@ -1,27 +1,27 @@
 import React from "react";
-import "./FooterItem.css";
+import IconButton from '@material-ui/core/IconButton';
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 const FooterItem = (props) => {
   let icon = null;
   switch (props.item.title) {
     case "FaGithub":
-      icon = <FaGithub size="4vh" />;
+      icon = <FaGithub size="3vh" />;
       break;
     case "FaLinkedin":
-      icon = <FaLinkedin size="4vh" />;
+      icon = <FaLinkedin size="3vh" />;
       break;
     default:
       return null;
   }
 
   return (
-    <div
-      className="Footer-item-container"
+    <IconButton
+      style={{ color: 'white' }}
       onClick={() => window.open(props.item.link, "_blank")}
     >
       {icon}
-    </div>
+    </IconButton>
   );
 };
 
